@@ -35,6 +35,6 @@ http.get(url).fail(function(reason){
     if(reason.statusCode)
         console.log('failed with status code', reason.statusCode);
     else
-        console.log('failed with error, reason);
+        console.log('failed with error', reason);
 });
 ```
