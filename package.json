@@ -1,0 +1,27 @@
+{
+  "name": "request-promise-json",
+  "version": "1.0.0",
+  "description": "Simple JSON API with 'q' promises on top of amazing 'request' module",
+  "main": "HTTPClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marushkevych/request-promise-json.git"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "request",
+    "json",
+    "q",
+    "promise"
+  ],
+  "author": "Andrey Marushkevych (marushkevych@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marushkevych/request-promise-json/issues"
+  },
+  "homepage": "https://github.com/marushkevych/request-promise-json"
+}
