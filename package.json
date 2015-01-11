@@ -1,6 +1,6 @@
 {
   "name": "request-promise-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple JSON API with 'q' promises on top of amazing 'request' module",
   "main": "HTTPClient.js",
   "scripts": {
