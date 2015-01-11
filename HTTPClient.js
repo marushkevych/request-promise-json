@@ -5,7 +5,7 @@
  * * * * * *
  * Usage:  *
  * * * * * *
- * var http = require('./HTTPClient');
+ * var http = require('request-promise-json');
  * http(method, url, [json]);
  * 
  * // or use shortcuts:
