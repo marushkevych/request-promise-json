@@ -1,5 +1,6 @@
 # request-promise-json
 Simple JSON API with 'q' promises on top of amazing 'request' module.
+All methods return promise resolving to json object.
 
 ## Install
 ```
@@ -9,7 +10,10 @@ npm install request-promise-json --save
 ## Usage:
 ```js
 var http = require('request-promise-json');
-http(method, url, [json]);
+
+http(method, url, [json]).then(function(resultJson){
+    console.log(resultJson.id);
+});
 
 // or use shortcuts:
 http.get(url);
