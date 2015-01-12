@@ -36,7 +36,7 @@ If response status code is >= 400, reject Error will have following properties:
 * statusCode
 * request - request options (method, url, body)
 * response - response body
-* 
+
 ```js
 // Example of error handling:
 http.get(url).fail(function(reason){
