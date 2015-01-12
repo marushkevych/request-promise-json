@@ -40,8 +40,8 @@ If response status code is >= 400, reject Error will have following properties:
 ```js
 // Example of error handling:
 http.get(url).fail(function(reason){
-    if(reason.statusCode)
-        console.log('failed with status code', reason.statusCode);
+    if(reason.statusCode === 400)
+        console.log('Bad request', reason.request);
     else
         console.log('failed with error', reason);
 });
