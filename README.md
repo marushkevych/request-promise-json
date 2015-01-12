@@ -1,5 +1,5 @@
 # request-promise-json
-Simple JSON API with 'q' promises on top of amazing 'request' module.
+Thin wrapper around [request](https://www.npmjs.com/package/request) module to provide simple JSON API wiht [q promises](http://documentup.com/kriskowal/q/).
 All methods return promise resolving to json object.
 
 ## Install
