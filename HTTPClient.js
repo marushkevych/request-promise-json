@@ -113,7 +113,13 @@ function performRequest(options) {
             }
             
             if(response.statusCode >= 400){
-                reject(response);
+                var statusCodeError = new Error(options.method + ' ' + options.url + ' failed with status code ' + response.statusCode);
+                statusCodeError.name = 'StatusCodeError';
+                statusCodeError.statusCode = response.statusCode;
+                statusCodeError.request = options;
+                statusCodeError.response = body;
+                
+                reject(statusCodeError);
                 return;
             }
             
