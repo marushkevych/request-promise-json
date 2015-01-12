@@ -31,8 +31,12 @@ http.request({
  
 ## Error Handling:
 If request fails with an error, promise will be rejected with that error.
-If response status code is >= 400, promise will be rejected with node's http.IncomingMessage
-See http://nodejs.org/api/http.html#http_http_incomingmessage
+
+If response status code is >= 400, reject Error will have following properties:
+* statusCode
+* request - request options (method, url, body)
+* response - response body
+* 
 ```js
 // Example of error handling:
 http.get(url).fail(function(reason){
