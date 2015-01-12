@@ -1,4 +1,4 @@
-var http = require('request-promise-json');
+var http = require('./HTTPClient');
 
 
 http.get('http://jsonplaceholder.typicode.com/posts/1').then(function(result){
